@@ -1,8 +1,11 @@
 name: Update
 
 on:
-  schedule:
-    - cron: "0 4 * * *"
+  # schedule:
+  #   - cron: "0 4 * * *"  # Disabled for now
+  push:
+    branches:
+      - main  # Runs on every push to the main branch
 
 env:
   GIT_REMOTE: https://${{ github.actor }}:${{ github.token }}@github.com/${{ github.repository }}.git
