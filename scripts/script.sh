@@ -35,7 +35,7 @@ githubaction() {
     ## Step 2: Commit the files
     git add ../data/records.json
     git config user.email "bot.noreply@github.com"
-    git config user.name "adityag-gitbot"
+    git config user.name "ashish"
 
     git commit -m "update: auto-updated at $(date +'%Y/%m/%d %H:%M:%S')"
 
